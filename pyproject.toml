@@ -91,7 +91,6 @@ markers = [
     "task4_4",
 ]
 [tool.ruff]
-
 exclude = [
     ".git",
     "__pycache__",
@@ -104,8 +103,8 @@ exclude = [
     "**/docs/**/*",
 ]
 
+[tool.ruff.lint]
 ignore = [
-    "ANN101",
     "ANN401",
     "N801",
     "E203",
@@ -126,7 +125,6 @@ ignore = [
     "D107",
     "D213",
     "ANN204",
-    "ANN102",
 ]
 select = ["D", "E", "F", "N", "ANN"]
 fixable = [
@@ -177,5 +175,5 @@ fixable = [
 ]
 unfixable = []
 
-[tool.ruff.extend-per-file-ignores]
+[tool.ruff.lint.extend-per-file-ignores]
 "tests/**/*.py" = ["D"]
