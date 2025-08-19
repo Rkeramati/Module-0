@@ -1,112 +1,42 @@
 # MiniTorch Module 0
 
-<img src="https://minitorch.github.io/minitorch.svg" width="50%">
+Welcome to the foundational module of MiniTorch! This assignment introduces you to the core concepts and tools you'll use throughout the course.
 
-* Docs: https://minitorch.github.io/
-* Overview: https://minitorch.github.io/module0/module0/
+## Learning Objectives
 
-## Fundamentals
+In this assignment, you will:
 
-This introductory module is focused on introducing several core software engineering methods for testing and debugging, and also includes some basic mathematical foundations.
+- **Implement mathematical operators** using functional programming principles
+- **Learn software engineering best practices** including testing, debugging, and code organization
+- **Build neural network infrastructure** by creating the foundational components
+- **Create and visualize classifiers** to understand machine learning fundamentals
 
-Before starting this assignment, make sure to set up your workspace following the setup guide, to understand how the code should be organized.
+## Getting Started
 
-### Guides
+### Prerequisites
 
-Each module has a set of guides to help with the background material. We recommend working through the assignment and utilizing the guides suggested for each task.
+Before beginning this assignment, please complete the environment setup:
 
-- Contributing
-- Functional Python
-- Property Testing
-- Modules
-- Visualization
+1. **Review the installation guide**: Follow the detailed instructions in [`installation.md`](installation.md) to configure your development environment
+2. **Verify your setup**: Ensure all dependencies are properly installed and your environment is working correctly. If you need help as your TAs. 
 
-In addition to completing each of the tasks below, you need to ensure that all the unit tests and style checks pass in the module. This may require writing docstrings or adding types to functions.
+### Assignment Overview
 
-## Tasks
+This module provides hands-on experience with the mathematical foundations underlying neural networks. You'll implement core operations that form the building blocks of more complex machine learning systems.
 
-### Task 0.1: Operators
+## Tasks and Resources
 
-This task is designed to help you get comfortable with style checking and testing. We ask you to implement a series of basic mathematical functions. These functions are simple, but they form the basis of MiniTorch. Make sure that you understand each of them as some terminologies might be new.
+### Required Reading
 
-**Todo**
-Complete the following functions in `minitorch/operators.py` and pass tests marked as task0_1.
+Start by reviewing the module guide:
+- **Module Overview**: [https://minitorch.github.io/module0/module0/](https://minitorch.github.io/module0/module0/)
 
-- `mul` - Multiplies two numbers
-- `id` - Returns the input unchanged
-- `add` - Adds two numbers
-- `neg` - Negates a number
-- `lt` - Checks if one number is less than another
-- `eq` - Checks if two numbers are equal
-- `max` - Returns the larger of two numbers
-- `is_close` - Checks if two numbers are close in value
-- `sigmoid` - Calculates the sigmoid function
-- `relu` - Applies the ReLU activation function
-- `log` - Calculates the natural logarithm
-- `exp` - Calculates the exponential function
-- `inv` - Calculates the reciprocal
-- `log_back` - Computes the derivative of log times a second arg
-- `inv_back` - Computes the derivative of reciprocal times a second arg
-- `relu_back` - Computes the derivative of ReLU times a second arg
+### Implementation Tasks
 
-### Task 0.2: Testing and Debugging
+Follow the guides listed in the module documentation to complete each task systematically. Each task builds upon the previous one, so complete them in order.
 
-We ask you to implement property tests for your operators from Task 0.1. These tests should ensure that your functions not only work but also obey high-level mathematical properties for any input. Note that you need to change arguments for those test functions.
-
-**Todo**
-Complete the test functions in `tests/test_operators.py` marked as task0_2.
-
-### Task 0.3: Functional Python
-
-To practice the use of higher-order functions in Python, implement three basic functional concepts. Use them in combination with operators described in Task 0.1 to build up more complex mathematical operations that work on lists instead of single values.
-
-**Todo**
-Complete the following functions in `minitorch/operators.py` and pass tests marked as tasks0_3.
-
-- `map` - Higher-order function that applies a given function to each element of an iterable
-- `zipWith` - Higher-order function that combines elements from two iterables using a given function
-- `reduce` - Higher-order function that reduces an iterable to a single value using a given function
-
-Using the above functions, implement:
-
-- `negList` - Negate all elements in a list using map
-- `addLists` - Add corresponding elements from two lists using zipWith
-- `sum` - Sum all elements in a list using reduce
-- `prod` - Calculate the product of all elements in a list using reduce
-
-### Task 0.4: Modules
-
-This task is to implement the core structure of the `minitorch.Module` class. We ask you to implement a tree data structure that stores named `minitorch.Parameter` on each node. Such a data structure makes it easy for users to create trees that can be walked to find all of the parameters of interest.
-
-To experiment with the system use the Module Sandbox:
-
-```bash
-streamlit run app.py -- 0
-```
-
-**Todo**
-Complete the functions in `minitorch/module.py` and pass tests marked as tasks0_4.
-
-- `minitorch.Module.train() -> None` - Set the mode of this module and all descendent modules to train.
-- `minitorch.Module.eval() -> None` - Set the mode of this module and all descendent modules to eval.
-- `minitorch.Module.named_parameters() -> Sequence[Tuple[str, Parameter]]` - Collect all the parameters of this module and its descendents.
-- `minitorch.Module.parameters() -> Sequence[Parameter]` - Enumerate over all the parameters of this module and its descendents.
-
-### Task 0.5: Visualization
-
-For the first few assignments, we use a set of datasets implemented in `minitorch/datasets.py`, which are 2D point classification datasets. (See TensorFlow Playground for similar examples.) Each of these dataset can be added to the visualization.
-
-To experiment with the system use:
-
-```bash
-streamlit run project/app.py -- 0
-```
-
-Read through the code in `project/run_torch.py` to get a sneak peek of an implementation of a model for these datasets using Torch.
-
-You can also provide a model that attempts to perform the classification by manipulating the parameters.
-
-**Todo**
-- Add docstrings for all the different datasets required for this part.
-- Start a streamlit server and print an image of the dataset. Hand-create classifiers that split the linear dataset into the correct colors.
-- Add the image in the README file in your repo along with the parameters that your used.
+* Task 0.1: Operators
+* Task 0.2: Testing and Debugging
+* Task 0.3: Functional Python
+* Task 0.4: Modules
+* Task 0.5: Visualization
