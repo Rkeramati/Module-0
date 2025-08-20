@@ -125,6 +125,7 @@ ignore = [
     "D107",
     "D213",
     "ANN204",
+    "D203"
 ]
 select = ["D", "E", "F", "N", "ANN"]
 fixable = [

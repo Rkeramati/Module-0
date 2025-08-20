@@ -3,6 +3,25 @@ import random
 from dataclasses import dataclass
 from typing import List, Tuple
 
+"""
+2D Classification Datasets for MiniTorch Visualization
+
+This module provides various 2D point classification datasets used for testing
+and visualizing machine learning models in MiniTorch.
+
+PYRIGHT STYLE REQUIREMENTS:
+To pass the type checking tests, you need to:
+
+1. ADD TYPE ANNOTATIONS to all function parameters and return values
+   Example: def make_pts(N: int) -> List[Tuple[float, float]]:
+
+2. ADD DOCSTRINGS to all functions
+   Use the triple-quote format with a brief description of what the function does
+
+3.ENSURE ALL IMPORTS are properly typed
+   The required imports are already provided at the top
+"""
+
 
 def make_pts(N):
     X = []
