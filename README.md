@@ -40,3 +40,6 @@ Follow the guides listed in the module documentation to complete each task syste
 * Task 0.3: Functional Python
 * Task 0.4: Modules
 * Task 0.5: Visualization
+
+### Task 0.5 Deliverables
+Add the image here along with the parameters that your used.
