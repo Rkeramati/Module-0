@@ -51,7 +51,7 @@ Each assignment is distributed through a Git repo. You should fork the template 
 Install all packages in your virtual environment:
 
 ```bash
->>> python -m pip install -e ".[dev]"
+>>> python -m pip install -e ".[dev,extra]"
 ```
 
 ## Verification
