@@ -39,7 +39,7 @@ The first line should be run only once, whereas the second needs to be run whene
 
 ## Getting the Code
 
-Each assignment is distributed through a Git repo. You should fork the template of the assignment and then edit yours in your forked repo. Once you have forked the template code, you can clone your own version:
+Each assignment is distributed through a Git repo. Once you accept the assignment from GitHub Classroom, a personal repository under Cornell-Tech-ML will be created for you. You can then clone this repository to start working on your assignment.
 
 ```bash
 >>> git clone {{ASSIGNMENT}}
