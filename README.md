@@ -45,3 +45,18 @@ For detailed testing instructions, see [`testing.md`](testing.md)
 
 ### Task 0.5 Deliverables
 Add the required image here along with the parameters that you used.
+
+### Submission Instructions
+
+1. **Commit Your Changes**: Make sure all your changes are committed to your repository.
+2. **Push to GitHub**: Push your changes to your GitHub repository.
+3. **Autograder**: Once you have pushed your changes, the autograder will automatically run and provide feedback on your submission. Check the GitHub Actions tab for the results.
+4. **Resubmit if Necessary**: If you need to make changes based on the feedback, make your edits, commit them, and push again. The autograder will re-run with your new changes.
+
+### Troubleshooting
+
+If you encounter issues during the submission process, consider the following steps:
+
+- **Check the Logs**: Review the logs in the GitHub Actions tab for any error messages or warnings.
+- **Check Instruction in Code**: Make sure you followed all instructions in the code comments and documentation.
+- **Ask for Help**: If you're stuck, don't hesitate to reach out to your TAs.
